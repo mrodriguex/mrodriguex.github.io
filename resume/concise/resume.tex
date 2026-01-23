@@ -1,0 +1,38 @@
+\documentclass[a4paper,10pt]{article}
+
+%––––––––––– Packages –––––––––––%
+\usepackage{geometry}
+\geometry{margin=1.6cm}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{tabularx}
+\setstretch{1.1}
+
+%––––––––––– Formatting –––––––––––%
+\titleformat{\section}{\large\bfseries}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\bfseries}{}{0em}{}
+
+\renewcommand{\labelitemi}{$\bullet$}
+
+%––––––––––– Document –––––––––––%
+\begin{document}
+
+\input{Sections/header.tex}
+
+\input{Sections/summary.tex}
+
+\input{Sections/skills.tex}
+
+\input{Sections/experience.tex}
+
+\input{Sections/education.tex}
+
+\input{Sections/projects.tex}
+
+\input{Sections/certifications.tex}
+
+\input{Sections/languages.tex}
+
+\end{document}

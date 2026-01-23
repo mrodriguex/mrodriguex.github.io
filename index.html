@@ -4,11 +4,19 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Manuel Rodríguez Camacho</title>
-  <link rel="icon" type="image/jpg" href="assets/images/favicon.jpg" />
+  <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="#about" class="nav-link">About</a>
+    <a href="#projects" class="nav-link">Projects</a>
+    <a href="#contact" class="nav-link">Contact</a>
+  </div>
+</nav>
 
 <header class="hero">
   <div class="hero-content">
@@ -28,7 +36,7 @@
 
 <main>
 
-<section class="section">
+<section class="section" id="about">
   <h2>About Me</h2>
   <p>
     Software engineer with experience in backend systems, reverse proxies,
@@ -37,7 +45,7 @@
   </p>
 </section>
 
-<section class="section">
+<section class="section" id="projects">
   <h2>Projects</h2>
 
   <!-- PROJECT CARD -->
@@ -92,9 +100,171 @@
     </div>
   </article>
 
+  <!-- PROJECT CARD -->
+  <article class="project">
+    <div class="project-info">
+      <h3>AES128</h3>
+      <p>
+        A high-performance AES-128 (Advanced Encryption Standard with 128-bit keys) encryption and decryption implementation leveraging Intel AES-NI hardware acceleration instructions.
+      </p>
+
+      <ul class="tags">
+        <li>C</li>
+        <li>Cryptography</li>
+        <li>Hardware Acceleration</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="https://github.com/mrodriguex/AES128" target="_blank">Source</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT CARD -->
+  <article class="project">
+    <div class="project-info">
+      <h3>COFB-AES128</h3>
+      <p>
+        A high-performance, hardware-accelerated implementation of the COFB (Ciphertext-Only Feedback) authenticated encryption mode combined with AES-128. This system provides both confidentiality and authenticity guarantees for encrypted messages using Galois Field arithmetic operations.
+      </p>
+
+      <ul class="tags">
+        <li>C</li>
+        <li>Cryptography</li>
+        <li>Authenticated Encryption</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="https://github.com/mrodriguex/COFB-AES128" target="_blank">Source</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT CARD -->
+  <article class="project">
+    <div class="project-info">
+      <h3>COFB-Midori64</h3>
+      <p>
+        A high-performance C implementation of the COFB (Confidentiality and Authenticity) authenticated encryption mode with the Midori-64 lightweight block cipher. This project provides both message encryption and authentication in a single cryptographic operation.
+      </p>
+
+      <ul class="tags">
+        <li>C</li>
+        <li>Cryptography</li>
+        <li>Lightweight Cipher</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="https://github.com/mrodriguex/COFB-Midori64" target="_blank">Source</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT CARD -->
+  <article class="project">
+    <div class="project-info">
+      <h3>hard.core</h3>
+      <p>
+        Hard base source code to generate new projects.
+      </p>
+
+      <ul class="tags">
+        <li>C#</li>
+        <li>Project Template</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="https://github.com/mrodriguex/hard.core" target="_blank">Source</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT CARD -->
+  <article class="project">
+    <div class="project-info">
+      <h3>hookhub</h3>
+      <p>
+        HookHub is a distributed communication platform that allows multiple services (called "Hooks") to connect to a central Hub and exchange messages in real-time. It leverages ASP.NET Core's SignalR technology for WebSocket and Long Polling support, providing reliable bidirectional communication between services.
+      </p>
+
+      <ul class="tags">
+        <li>C#</li>
+        <li>ASP.NET Core</li>
+        <li>SignalR</li>
+        <li>Real-time Communication</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="https://github.com/mrodriguex/hookhub" target="_blank">Source</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT CARD -->
+  <article class="project">
+    <div class="project-info">
+      <h3>hookhubnet</h3>
+      <p>
+        HookHubNet is a tunneling system that enables secure forwarding of TCP traffic through WebSocket connections. It consists of a central hub that manages connections from multiple hooks, each forwarding traffic to backend services.
+      </p>
+
+      <ul class="tags">
+        <li>C#</li>
+        <li>WebSockets</li>
+        <li>TCP Tunneling</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="https://github.com/mrodriguex/hookhubnet" target="_blank">Source</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT CARD -->
+  <article class="project">
+    <div class="project-info">
+      <h3>Midori128</h3>
+      <p>
+        A high-performance implementation of the Midori-128 lightweight block cipher designed for IoT and resource-constrained environments.
+      </p>
+
+      <ul class="tags">
+        <li>C</li>
+        <li>Cryptography</li>
+        <li>Lightweight Cipher</li>
+        <li>IoT</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="https://github.com/mrodriguex/Midori128" target="_blank">Source</a>
+      </div>
+    </div>
+  </article>
+
+  <!-- PROJECT CARD -->
+  <article class="project">
+    <div class="project-info">
+      <h3>Midori64</h3>
+      <p>
+        A high-performance implementation of the MIDORI-64 lightweight block cipher designed for resource-constrained environments and IoT applications.
+      </p>
+
+      <ul class="tags">
+        <li>C</li>
+        <li>Cryptography</li>
+        <li>Lightweight Cipher</li>
+        <li>IoT</li>
+      </ul>
+
+      <div class="project-links">
+        <a href="https://github.com/mrodriguex/Midori64" target="_blank">Source</a>
+      </div>
+    </div>
+  </article>
+
 </section>
 
-<section class="section">
+<section class="section" id="contact">
   <h2>Contact</h2>
   <p>
     Interested in collaboration, consulting, or open-source work.
