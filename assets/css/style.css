@@ -1,9 +1,9 @@
 :root {
-  --bg: #0f172a;
-  --panel: #020617;
-  --text: #e5e7eb;
-  --muted: #94a3b8;
-  --accent: #38bdf8;
+  --bg: #ffffff;
+  --panel: #f8f9fa;
+  --text: #212529;
+  --muted: #6c757d;
+  --accent: #17a2b8;
 }
 
 * {
@@ -25,7 +25,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #dee2e6;
 }
 
 .nav-container {
@@ -54,7 +54,7 @@ body {
 }
 
 .hero {
-  background: radial-gradient(circle at top, #020617, var(--bg));
+  background: linear-gradient(to bottom, #f8f9fa, var(--bg));
   padding: 4rem 1.5rem;
   text-align: center;
 }
@@ -80,7 +80,7 @@ body {
 }
 
 .hero-links a:hover {
-  color: #7dd3fc;
+  color: #138496;
   transform: translateY(-2px);
 }
 
@@ -100,7 +100,7 @@ main {
 }
 
 .section h2 {
-  border-bottom: 1px solid #1e293b;
+  border-bottom: 1px solid #dee2e6;
   padding-bottom: 0.5rem;
   margin-bottom: 1.5rem;
 }
@@ -118,7 +118,7 @@ main {
 
 .project:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .project-info h3 {
@@ -134,7 +134,8 @@ main {
 }
 
 .tags li {
-  background: #1e293b;
+  background: #e9ecef;
+  color: var(--text);
   padding: 0.25rem 0.75rem;
   border-radius: 999px;
   font-size: 0.85rem;
