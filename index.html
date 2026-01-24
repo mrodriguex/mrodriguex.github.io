@@ -1,367 +1,432 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Manuel Rodríguez Camacho</title>
   <link rel="icon" type="image/png" href="assets/images/favicon.png" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
+
 <body>
 
-<nav class="navbar">
-  <div class="nav-container">
-    <a href="#about" class="nav-link">About</a>
-    <a href="#skills" class="nav-link">Skills</a>
-    <a href="#experience" class="nav-link">Experience</a>
-    <a href="#projects" class="nav-link">Projects</a>
-    <a href="#education" class="nav-link">Education</a>
-    <a href="#contact" class="nav-link">Contact</a>
-  </div>
-</nav>
-
-<header class="hero">
-  <div class="hero-content">
-    <img src="assets/images/avatar.png" alt="Avatar" class="avatar">
-    <h1>Manuel Rodríguez Camacho</h1>
-    <p class="subtitle">
-      Software Engineer · Distributed Systems · Networking · .NET
-    </p>
-
-    <div class="hero-links">
-      <a href="https://github.com/mrodriguex" target="_blank">GitHub</a>
-      <a href="https://www.linkedin.com/in/manuel-rodriguez-camacho/" target="_blank">LinkedIn</a>
-      <a href="resume/concise/resume.pdf" target="_blank">Concise Resume</a>
-      <a href="resume/inextenso/resume.pdf" target="_blank">Full Resume</a>
-      <a href="mailto:manuel.r.camacho@outlook.com">Contact</a>
-    </div>
-  </div>
-</header>
-
-<main>
-
-<section class="section" id="about">
-  <h2>About Me</h2>
-  <p>
-    Software Development Engineer and Technical Leader with experience in full-stack development, microservices architecture, cloud-ready applications, and cross-functional team collaboration. Skilled in designing scalable systems, implementing best development practices, and guiding engineering teams toward efficient and timely delivery.
-  </p>
-</section>
-
-<section class="section" id="skills">
-  <h2>Technical Skills</h2>
-  <div class="skills-grid">
-    <div class="skill-category">
-      <h3>Languages</h3>
-      <p>C#, C, JavaScript, CSS, PHP, Python, VHDL</p>
-    </div>
-    <div class="skill-category">
-      <h3>Frameworks</h3>
-      <p>.NET Core, MAUI, Razor Pages</p>
-    </div>
-    <div class="skill-category">
-      <h3>Architectures</h3>
-      <p>MVC, MVVM, Microservices, Legacy Layered Applications</p>
-    </div>
-    <div class="skill-category">
-      <h3>Tools</h3>
-      <p>Git, Azure DevOps, Docker, Ansible, KVM, WSL2, VPN, SCRUM</p>
-    </div>
-    <div class="skill-category">
-      <h3>Databases</h3>
-      <p>SQL Server, Azure SQL, MySQL</p>
-    </div>
-    <div class="skill-category">
-      <h3>Cloud</h3>
-      <p>Azure (App Services, SQL, Pipelines), AWS</p>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="experience">
-  <h2>Professional Experience</h2>
-  <div class="experience-item">
-    <h3>Software Developer / Technical Leader</h3>
-    <p class="experience-company">Cryoinfra — 2019 to 2025</p>
-    <ul>
-      <li>Led multidisciplinary SCRUM-based teams, ensuring timely delivery of high-impact software solutions.</li>
-      <li>Designed, implemented, and maintained a microservices-based architecture secured with JWT authentication.</li>
-      <li>Developed scalable web and mobile applications using Razor Pages, .NET Core, and .NET MAUI.</li>
-      <li>Integrated and orchestrated multiple internal and external APIs for data synchronization across systems.</li>
-      <li>Defined technical documentation standards, including architecture diagrams, workflows, and coding guidelines.</li>
-      <li>Mentored junior developers, conducted code reviews, and promoted best practices in software development.</li>
-    </ul>
-  </div>
-  <div class="experience-item">
-    <h3>Laboratory Academic</h3>
-    <p class="experience-company">Universidad Autónoma Metropolitana - Azcapotzalco — 2014 to 2017</p>
-    <ul>
-      <li>Developed and maintained departmental web site and applications using PHP, JavaScript, and MySQL.</li>
-      <li>Administered Linux and Windows servers, as well as departmental network infrastructure.</li>
-      <li>Maintained and supported Systems Department classrooms and laboratories.</li>
-      <li>Contributed to teaching and research activities by assisting faculty and supporting academic projects.</li>
-    </ul>
-  </div>
-  <div class="experience-item">
-    <h3>Junior Software Developer</h3>
-    <p class="experience-company">Cryoinfra — 2012 to 2014</p>
-    <ul>
-      <li>Developed monolithic web and desktop applications using .NET Framework and SQL Server.</li>
-      <li>Collaborated closely with QA and product teams to ensure high-quality deliverables.</li>
-      <li>Diagnosed and resolved complex issues in third-party components (e.g., Telerik).</li>
-      <li>Optimized database queries, improving application performance and reliability.</li>
-      <li>Provided help desk and technical support for internal users.</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section" id="projects">
-  <h2>Projects</h2>
-
-  <!-- PROJECT CARD -->
-  <article class="project">
-    <div class="project-info">
-      <h3>HookHubNet</h3>
-      <p>
-        HookHubNet is a tunneling system that enables secure forwarding of TCP traffic through WebSocket connections. It consists of a central hub that manages connections from multiple hooks, each forwarding traffic to backend services.
-      </p>
-
-      <ul class="tags">
-        <li>.NET</li>
-        <li>YARP</li>
-        <li>WebSockets</li>
-        <li>Reverse Proxy</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/mrodriguex/hookhubnet" target="_blank">Source</a>
-        <a href="#" target="_blank">Docs</a>
+  <nav class="navbar">
+    <div class="nav-container">
+      <button class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#achievements" class="nav-link">Achievements</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </div>
     </div>
+  </nav>
 
-    <div class="project-images">
-      <img src="assets/images/project1-1.png" alt="HookHubNet screenshot">
-      <img src="assets/images/project1-2.png" alt="HookHubNet screenshot">
-    </div>
-  </article>
-
-  <!-- PROJECT CARD -->
-  <article class="project">
-    <div class="project-info">
-      <h3>Another Project</h3>
-      <p>
-        Short description of what the project does and why it exists.
+  <header class="hero">
+    <div class="hero-content">
+      <img src="assets/images/profile_photo.jpeg" alt="Avatar" class="avatar">
+      <h1>Manuel Rodríguez Camacho</h1>
+      <p class="subtitle">
+        Software Engineer · Distributed Systems · Networking · .NET
       </p>
 
-      <ul class="tags">
-        <li>API</li>
-        <li>Cloud</li>
-        <li>Security</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="#" target="_blank">Source</a>
+      <div class="hero-links">
+        <a href="https://github.com/mrodriguex" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/manuel-rodriguez-camacho/" target="_blank">LinkedIn</a>
+        <a href="resume/concise/resume.pdf" target="_blank">Concise Resume</a>
+        <a href="resume/inextenso/resume.pdf" target="_blank">Full Resume</a>
       </div>
     </div>
+  </header>
 
-    <div class="project-images">
-      <img src="assets/images/project2-1.png" alt="Project screenshot">
-    </div>
-  </article>
+  <main>
 
-  <!-- PROJECT CARD -->
-  <article class="project">
-    <div class="project-info">
-      <h3>AES128</h3>
+    <section class="section" id="about">
+      <h2>About Me</h2>
       <p>
-        A high-performance AES-128 (Advanced Encryption Standard with 128-bit keys) encryption and decryption implementation leveraging Intel AES-NI hardware acceleration instructions.
+        Software Development Engineer and Technical Leader with experience in full-stack development, microservices
+        architecture, cloud-ready applications, and cross-functional team collaboration. Skilled in designing scalable
+        systems, implementing best development practices, and guiding engineering teams toward efficient and timely
+        delivery.
       </p>
+    </section>
 
-      <ul class="tags">
-        <li>C</li>
-        <li>Cryptography</li>
-        <li>Hardware Acceleration</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/mrodriguex/AES128" target="_blank">Source</a>
+    <section class="section" id="skills">
+      <h2>Technical Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3>Languages</h3>
+          <p>C#, C, JavaScript, CSS, PHP, Python, VHDL</p>
+        </div>
+        <div class="skill-category">
+          <h3>Frameworks</h3>
+          <p>.NET Core, MAUI, Razor Pages</p>
+        </div>
+        <div class="skill-category">
+          <h3>Architectures</h3>
+          <p>MVC, MVVM, Microservices, Legacy Layered Applications</p>
+        </div>
+        <div class="skill-category">
+          <h3>Tools</h3>
+          <p>Git, Azure DevOps, Docker, Ansible, KVM, WSL2, VPN, SCRUM</p>
+        </div>
+        <div class="skill-category">
+          <h3>Databases</h3>
+          <p>SQL Server, Azure SQL, MySQL</p>
+        </div>
+        <div class="skill-category">
+          <h3>Cloud</h3>
+          <p>Azure (App Services, SQL, Pipelines), AWS</p>
+        </div>
       </div>
-    </div>
-  </article>
+    </section>
 
-  <!-- PROJECT CARD -->
-  <article class="project">
-    <div class="project-info">
-      <h3>COFB-AES128</h3>
+    <section class="section" id="experience">
+      <h2>Professional Experience</h2>
+      <div class="experience-item">
+        <h3>Software Developer / Technical Leader</h3>
+        <p class="experience-company">Cryoinfra — 2019 to 2025</p>
+        <ul>
+          <li>Led multidisciplinary SCRUM-based teams, ensuring timely delivery of high-impact software solutions.</li>
+          <li>Designed, implemented, and maintained a microservices-based architecture secured with JWT authentication.
+          </li>
+          <li>Developed scalable web and mobile applications using Razor Pages, .NET Core, and .NET MAUI.</li>
+          <li>Integrated and orchestrated multiple internal and external APIs for data synchronization across systems.
+          </li>
+          <li>Defined technical documentation standards, including architecture diagrams, workflows, and coding
+            guidelines.</li>
+          <li>Mentored junior developers, conducted code reviews, and promoted best practices in software development.
+          </li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Laboratory Academic</h3>
+        <p class="experience-company">Universidad Autónoma Metropolitana - Azcapotzalco — 2014 to 2017</p>
+        <ul>
+          <li>Developed and maintained departmental web site and applications using PHP, JavaScript, and MySQL.</li>
+          <li>Administered Linux and Windows servers, as well as departmental network infrastructure.</li>
+          <li>Maintained and supported Systems Department classrooms and laboratories.</li>
+          <li>Contributed to teaching and research activities by assisting faculty and supporting academic projects.
+          </li>
+        </ul>
+      </div>
+      <div class="experience-item">
+        <h3>Junior Software Developer</h3>
+        <p class="experience-company">Cryoinfra — 2012 to 2014</p>
+        <ul>
+          <li>Developed monolithic web and desktop applications using .NET Framework and SQL Server.</li>
+          <li>Collaborated closely with QA and product teams to ensure high-quality deliverables.</li>
+          <li>Diagnosed and resolved complex issues in third-party components (e.g., Telerik).</li>
+          <li>Optimized database queries, improving application performance and reliability.</li>
+          <li>Provided help desk and technical support for internal users.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects</h2>
+
+      <!-- PROJECT CARD -->
+      <article class="project">
+        <div class="project-info">
+          <h3>HookHubNet</h3>
+          <p>
+            HookHubNet is a tunneling system that enables secure forwarding of TCP traffic through WebSocket
+            connections. It consists of a central hub that manages connections from multiple hooks, each forwarding
+            traffic to backend services.
+          </p>
+          <p>The system operates by having hooks connect to a central hub via WebSockets. Each hook is assigned a unique
+            TCP port on the hub. Incoming TCP connections to these ports are tunneled through the WebSocket to the hook,
+            which then forwards the traffic to the configured backend service. This allows exposing local services
+            securely without direct network exposure.</p>
+
+          <ul class="tags">
+            <li>.NET</li>
+            <li>YARP</li>
+            <li>WebSockets</li>
+            <li>Reverse Proxy</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://mrodriguex.github.io/hookhubnet" target="_blank">Website</a>
+            <a href="https://github.com/mrodriguex/hookhubnet" target="_blank">Source</a>
+          </div>
+        </div>
+
+        <div class="project-images">
+          <img src="assets/images/projects_hookhubnet.png" alt="HookHubNet screenshot">
+        </div>
+      </article>
+
+      <!-- PROJECT CARD -->
+      <article class="project">
+        <div class="project-info">
+          <h3>AES128</h3>
+          <p>
+            A high-performance AES-128 (Advanced Encryption Standard with 128-bit keys) encryption and decryption
+            implementation leveraging Intel AES-NI hardware acceleration instructions.
+          </p>
+
+          <ul class="tags">
+            <li>C</li>
+            <li>Cryptography</li>
+            <li>Hardware Acceleration</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/mrodriguex/AES128" target="_blank">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT CARD -->
+      <article class="project">
+        <div class="project-info">
+          <h3>COFB-AES128</h3>
+          <p>
+            A high-performance, hardware-accelerated implementation of the COFB (Ciphertext-Only Feedback) authenticated
+            encryption mode combined with AES-128. This system provides both confidentiality and authenticity guarantees
+            for encrypted messages using Galois Field arithmetic operations.
+          </p>
+
+          <ul class="tags">
+            <li>C</li>
+            <li>Cryptography</li>
+            <li>Authenticated Encryption</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/mrodriguex/COFB-AES128" target="_blank">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT CARD -->
+      <article class="project">
+        <div class="project-info">
+          <h3>COFB-Midori64</h3>
+          <p>
+            A high-performance C implementation of the COFB (Confidentiality and Authenticity) authenticated encryption
+            mode with the Midori-64 lightweight block cipher. This project provides both message encryption and
+            authentication in a single cryptographic operation.
+          </p>
+
+          <ul class="tags">
+            <li>C</li>
+            <li>Cryptography</li>
+            <li>Lightweight Cipher</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/mrodriguex/COFB-Midori64" target="_blank">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT CARD -->
+      <article class="project">
+        <div class="project-info">
+          <h3>hard.core</h3>
+          <p>
+            Hard base source code to generate new projects.
+          </p>
+
+          <ul class="tags">
+            <li>C#</li>
+            <li>Project Template</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/mrodriguex/hard.core" target="_blank">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT CARD -->
+      <article class="project">
+        <div class="project-info">
+          <h3>hookhub</h3>
+          <p>
+            HookHub is a distributed communication platform that allows multiple services (called "Hooks") to connect to
+            a central Hub and exchange messages in real-time. It leverages ASP.NET Core's SignalR technology for
+            WebSocket and Long Polling support, providing reliable bidirectional communication between services.
+          </p>
+
+          <ul class="tags">
+            <li>C#</li>
+            <li>ASP.NET Core</li>
+            <li>SignalR</li>
+            <li>Real-time Communication</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/mrodriguex/hookhub" target="_blank">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT CARD -->
+      <article class="project">
+        <div class="project-info">
+          <h3>hookhubnet</h3>
+          <p>
+            HookHubNet is a tunneling system that enables secure forwarding of TCP traffic through WebSocket
+            connections. It consists of a central hub that manages connections from multiple hooks, each forwarding
+            traffic to backend services.
+          </p>
+
+          <ul class="tags">
+            <li>C#</li>
+            <li>WebSockets</li>
+            <li>TCP Tunneling</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/mrodriguex/hookhubnet" target="_blank">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT CARD -->
+      <article class="project">
+        <div class="project-info">
+          <h3>Midori128</h3>
+          <p>
+            A high-performance implementation of the Midori-128 lightweight block cipher designed for IoT and
+            resource-constrained environments.
+          </p>
+
+          <ul class="tags">
+            <li>C</li>
+            <li>Cryptography</li>
+            <li>Lightweight Cipher</li>
+            <li>IoT</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/mrodriguex/Midori128" target="_blank">Source</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT CARD -->
+      <article class="project">
+        <div class="project-info">
+          <h3>Midori64</h3>
+          <p>
+            A high-performance implementation of the MIDORI-64 lightweight block cipher designed for
+            resource-constrained environments and IoT applications.
+          </p>
+
+          <ul class="tags">
+            <li>C</li>
+            <li>Cryptography</li>
+            <li>Lightweight Cipher</li>
+            <li>IoT</li>
+          </ul>
+
+          <div class="project-links">
+            <a href="https://github.com/mrodriguex/Midori64" target="_blank">Source</a>
+          </div>
+        </div>
+      </article>
+
+    </section>
+
+    <section class="section" id="education">
+      <h2>Education</h2>
+      <ul class="education-list">
+        <li><strong>Master of Computer Science</strong> — Centro de Investigación y Estudios Avanzados (CINVESTAV) (2016
+          to 2018)</li>
+        <li><strong>Computer Engineering</strong> — Universidad Autónoma Metropolitana Azcapotzalco (UAM-A) (2009 to
+          2014)</li>
+        <li><strong>Computer Technician</strong> — Centro de Estudios Computacionales del Valle de México (CECOVAM)
+          (2006 to 2008)</li>
+        <li><strong>Automated Machines Technician</strong> — Centro de Estudios Científicos y Tecnológicos (CECyT 9)
+          (2005 to 2008)</li>
+      </ul>
+    </section>
+
+    <section class="section" id="achievements">
+      <h2>Achievements</h2>
+      <div class="achievements-list">
+        <h3>International Conferences</h3>
+        <ul>
+          <li><strong>LatinCrypt 2017</strong> — Fifth International Conference on Cryptology and Information Security
+            in Latin America. University of Havana, Cuba (Sept. 2017). Certificate of Participation.</li>
+        </ul>
+
+        <h3>Research Presentations</h3>
+        <ul>
+          <li><em>"Analysis of an Embedded Web Interface on an Arduino Platform and a Custom-Built Device."</em> 3rd
+            Research Conference of the Systems Department, Universidad Autónoma Metropolitana (July 2014).</li>
+        </ul>
+
+        <h3>Programming Competitions & Honors</h3>
+        <ul>
+          <li><strong>ACM-ICPC Mexico & Central America Regional Contest</strong> — Honorable Mention, ITESM (2013,
+            2012, 2011).</li>
+          <li><strong>IV Annual Programming Contest "Dennis M. Ritchie"</strong> — Second Place, IPN–ESCOM (2012).</li>
+        </ul>
+
+        <h3>ACM Competitive Programming Training</h3>
+        <ul>
+          <li>ACM Student Chapter — ITESM Mexico City (2011)</li>
+          <li>ACM Student Chapter — BUAP Puebla (2012)</li>
+          <li>ACM Student Chapter — ESCOM-IPN Mexico City (2013)</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
       <p>
-        A high-performance, hardware-accelerated implementation of the COFB (Ciphertext-Only Feedback) authenticated encryption mode combined with AES-128. This system provides both confidentiality and authenticity guarantees for encrypted messages using Galois Field arithmetic operations.
+        Interested in collaboration, consulting, or open-source work.
       </p>
-
-      <ul class="tags">
-        <li>C</li>
-        <li>Cryptography</li>
-        <li>Authenticated Encryption</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/mrodriguex/COFB-AES128" target="_blank">Source</a>
-      </div>
-    </div>
-  </article>
-
-  <!-- PROJECT CARD -->
-  <article class="project">
-    <div class="project-info">
-      <h3>COFB-Midori64</h3>
       <p>
-        A high-performance C implementation of the COFB (Confidentiality and Authenticity) authenticated encryption mode with the Midori-64 lightweight block cipher. This project provides both message encryption and authentication in a single cryptographic operation.
+        <style>
+          .libutton {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 7px;
+            text-align: center;
+            outline: none;
+            text-decoration: none !important;
+            color: #ffffff !important;
+            width: 200px;
+            height: 32px;
+            border-radius: 16px;
+            background-color: #0A66C2;
+            font-family: "SF Pro Text", Helvetica, sans-serif;
+          }
+        </style>
+        <a class="libutton"
+          href="https://www.linkedin.com/comm/mynetwork/discovery-see-all?usecase=PEOPLE_FOLLOWS&followMember=manuel-rodriguez-camacho"
+          target="_blank">Find me on LinkedIn</a>
       </p>
+    </section>
 
-      <ul class="tags">
-        <li>C</li>
-        <li>Cryptography</li>
-        <li>Lightweight Cipher</li>
-      </ul>
+  </main>
 
-      <div class="project-links">
-        <a href="https://github.com/mrodriguex/COFB-Midori64" target="_blank">Source</a>
-      </div>
-    </div>
-  </article>
+  <footer>
+    <p>© <span id="year"></span> Manuel Rodríguez Camacho</p>
+  </footer>
 
-  <!-- PROJECT CARD -->
-  <article class="project">
-    <div class="project-info">
-      <h3>hard.core</h3>
-      <p>
-        Hard base source code to generate new projects.
-      </p>
+  <script src="assets/js/main.js"></script>
 
-      <ul class="tags">
-        <li>C#</li>
-        <li>Project Template</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/mrodriguex/hard.core" target="_blank">Source</a>
-      </div>
-    </div>
-  </article>
-
-  <!-- PROJECT CARD -->
-  <article class="project">
-    <div class="project-info">
-      <h3>hookhub</h3>
-      <p>
-        HookHub is a distributed communication platform that allows multiple services (called "Hooks") to connect to a central Hub and exchange messages in real-time. It leverages ASP.NET Core's SignalR technology for WebSocket and Long Polling support, providing reliable bidirectional communication between services.
-      </p>
-
-      <ul class="tags">
-        <li>C#</li>
-        <li>ASP.NET Core</li>
-        <li>SignalR</li>
-        <li>Real-time Communication</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/mrodriguex/hookhub" target="_blank">Source</a>
-      </div>
-    </div>
-  </article>
-
-  <!-- PROJECT CARD -->
-  <article class="project">
-    <div class="project-info">
-      <h3>hookhubnet</h3>
-      <p>
-        HookHubNet is a tunneling system that enables secure forwarding of TCP traffic through WebSocket connections. It consists of a central hub that manages connections from multiple hooks, each forwarding traffic to backend services.
-      </p>
-
-      <ul class="tags">
-        <li>C#</li>
-        <li>WebSockets</li>
-        <li>TCP Tunneling</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/mrodriguex/hookhubnet" target="_blank">Source</a>
-      </div>
-    </div>
-  </article>
-
-  <!-- PROJECT CARD -->
-  <article class="project">
-    <div class="project-info">
-      <h3>Midori128</h3>
-      <p>
-        A high-performance implementation of the Midori-128 lightweight block cipher designed for IoT and resource-constrained environments.
-      </p>
-
-      <ul class="tags">
-        <li>C</li>
-        <li>Cryptography</li>
-        <li>Lightweight Cipher</li>
-        <li>IoT</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/mrodriguex/Midori128" target="_blank">Source</a>
-      </div>
-    </div>
-  </article>
-
-  <!-- PROJECT CARD -->
-  <article class="project">
-    <div class="project-info">
-      <h3>Midori64</h3>
-      <p>
-        A high-performance implementation of the MIDORI-64 lightweight block cipher designed for resource-constrained environments and IoT applications.
-      </p>
-
-      <ul class="tags">
-        <li>C</li>
-        <li>Cryptography</li>
-        <li>Lightweight Cipher</li>
-        <li>IoT</li>
-      </ul>
-
-      <div class="project-links">
-        <a href="https://github.com/mrodriguex/Midori64" target="_blank">Source</a>
-      </div>
-    </div>
-  </article>
-
-</section>
-
-<section class="section" id="education">
-  <h2>Education</h2>
-  <ul class="education-list">
-    <li><strong>Master of Computer Science</strong> — Centro de Investigación y Estudios Avanzados (CINVESTAV) (2016 to 2018)</li>
-    <li><strong>Computer Engineering</strong> — Universidad Autónoma Metropolitana Azcapotzalco (UAM-A) (2009 to 2014)</li>
-    <li><strong>Computer Technician</strong> — Centro de Estudios Computacionales del Valle de México (CECOVAM) (2006 to 2008)</li>
-    <li><strong>Automated Machines Technician</strong> — Centro de Estudios Científicos y Tecnológicos (CECyT 9) (2005 to 2008)</li>
-  </ul>
-</section>
-
-<section class="section" id="contact">
-  <h2>Contact</h2>
-  <p>
-    Interested in collaboration, consulting, or open-source work.
-  </p>
-  <p>
-    <a href="mailto:your@email.com">your@email.com</a>
-  </p>
-</section>
-
-</main>
-
-<footer>
-  <p>© <span id="year"></span> Manuel Rodríguez Camacho</p>
-</footer>
-
-<script src="assets/js/main.js"></script>
-
-<button id="back-to-top" title="Back to Top" style="position: fixed; bottom: 20px; right: 20px; display: none; background: #17a2b8; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 20px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index: 1000;">↑</button>
+  <button id="back-to-top" title="Back to Top"
+    style="position: fixed; bottom: 20px; right: 20px; display: none; background: #17a2b8; color: white; border: none; border-radius: 50%; width: 50px; height: 50px; font-size: 20px; cursor: pointer; box-shadow: 0 4px 8px rgba(0,0,0,0.3); z-index: 1000;">↑</button>
 
 </body>
+
 </html>

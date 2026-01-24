@@ -53,6 +53,41 @@ body {
   outline-offset: 2px;
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background: var(--text);
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-menu.active {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: var(--panel);
+  padding: 1rem 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 .hero {
   background: linear-gradient(to bottom, #f8f9fa, var(--bg));
   padding: 4rem 1.5rem;
@@ -177,13 +212,23 @@ footer {
 }
 
 @media (max-width: 600px) {
+  .hamburger {
+    display: flex;
+    margin-left: auto;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
   .nav-container {
-    padding: 0 1rem;
-    gap: 1rem;
+    position: relative;
   }
 
   .nav-link {
     font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #dee2e6;
   }
 
   .hero {
