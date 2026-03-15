@@ -196,6 +196,107 @@ main {
   width: 100%;
   border-radius: 8px;
   margin-bottom: 0.5rem;
+  cursor: zoom-in;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.project-images img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.16);
+}
+
+.project-images img:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.image-viewer {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 2000;
+}
+
+.image-viewer.is-open {
+  display: block;
+}
+
+.image-viewer-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 25, 41, 0.84);
+}
+
+.image-viewer-content {
+  position: relative;
+  z-index: 1;
+  margin: 4vh auto;
+  width: min(92vw, 1100px);
+  background: #0f172a;
+  border-radius: 14px;
+  padding: 3rem 3.5rem 2rem;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+}
+
+#viewer-image {
+  display: block;
+  width: 100%;
+  max-height: 72vh;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.image-viewer-caption {
+  color: #f1f5f9;
+  margin: 1rem 0 0;
+  text-align: center;
+}
+
+.image-viewer-close,
+.image-viewer-nav {
+  position: absolute;
+  border: none;
+  color: #ffffff;
+  background: rgba(15, 23, 42, 0.7);
+  cursor: pointer;
+}
+
+.image-viewer-close {
+  top: 0.8rem;
+  right: 0.8rem;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.image-viewer-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.image-viewer-prev {
+  left: 0.8rem;
+}
+
+.image-viewer-next {
+  right: 0.8rem;
+}
+
+.image-viewer-close:hover,
+.image-viewer-nav:hover {
+  background: rgba(23, 162, 184, 0.9);
+}
+
+.image-viewer-close:focus,
+.image-viewer-nav:focus {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
 }
 
 footer {
@@ -264,5 +365,17 @@ footer {
   .project {
     padding: 1rem;
     gap: 1rem;
+  }
+
+  .image-viewer-content {
+    margin: 6vh auto;
+    width: 94vw;
+    padding: 2.8rem 2.6rem 1.5rem;
+  }
+
+  .image-viewer-nav {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.2rem;
   }
 }
