@@ -1,0 +1,63 @@
+    .lang-selector {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 10vh;
+      gap: 2rem;
+      text-align: center;
+    }
+
+    .lang-selector h5 {
+      color: var(--muted);
+      font-weight: 400;
+      border: none;
+    }
+
+    .lang-buttons {
+      display: flex;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .lang-buttons a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 1rem 2.5rem;
+      background: var(--panel);
+      color: var(--text);
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      border: 1px solid #dee2e6;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .lang-buttons a:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      border-color: var(--accent);
+    }
+
+    .lang-buttons a:focus {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .lang-buttons .flag {
+      font-size: 1.6rem;
+      line-height: 1;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    main {
+      flex: 1;
+    }
