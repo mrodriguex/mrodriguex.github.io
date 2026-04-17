@@ -125,4 +125,28 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
+
+  // License Carousel
+  document.querySelectorAll(".license-carousel").forEach(carousel => {
+    const track = carousel.querySelector(".license-track");
+    const prevBtn = carousel.querySelector(".carousel-prev");
+    const nextBtn = carousel.querySelector(".carousel-next");
+    if (!track || !prevBtn || !nextBtn) return;
+
+    const scrollStep = 260; // badge width + gap
+
+    const updateButtons = () => {
+      prevBtn.disabled = track.scrollLeft <= 0;
+      nextBtn.disabled = track.scrollLeft + track.clientWidth >= track.scrollWidth - 1;
+    };
+
+    prevBtn.addEventListener("click", () => track.scrollBy({ left: -scrollStep, behavior: "smooth" }));
+    nextBtn.addEventListener("click", () => track.scrollBy({ left: scrollStep, behavior: "smooth" }));
+    track.addEventListener("scroll", updateButtons, { passive: true });
+
+    // Initial + deferred check (Credly loads iframes async)
+    updateButtons();
+    setTimeout(updateButtons, 2000);
+    window.addEventListener("resize", updateButtons);
+  });
 });
